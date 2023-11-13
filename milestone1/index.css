@@ -1,0 +1,195 @@
+/* Part for the whole HTML Scroll by using hfref on Navbar */
+    html {
+        scroll-behavior: smooth;
+    }
+/* Part for the whole HTML Scroll by using hfref on Navbar */
+
+/* Body Margin */
+    body {
+        margin: 0;
+    }
+/* Body Margin */
+
+/* Navigation CSS */
+    nav {
+        overflow: hidden;
+        height: 50px ;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: grey;
+        opacity: 70%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        right: 5%;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        border: 5px ;
+        font-weight: 800;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+    }
+/* Navigation CSS */
+
+/* CSS For main content cover */
+.maincontent {
+    padding-top: 10%;
+    padding-bottom: 30%;
+    padding-left: 50%;
+    background-image: url(./assets/bodybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maincontent h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 240%;
+    font-style: italic;
+    text-shadow: 1px 1px grey;
+}
+
+/* CSS For main content cover */
+
+
+/* CSS for Shopping product */
+.shop {
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    overflow-x: hidden;
+    transform: translateX(0);
+    transition-duration: 15s;
+    
+}
+
+h2 {
+-moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#section_1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5%;
+    background-color: grey;
+    opacity: 70%;
+    row-gap: 5%;
+}
+
+#section_1 img {
+    display: inline-block;
+    place-self: center;
+    width: 95%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 30%;
+    transition: 0.5s;
+}
+
+
+#section_1 img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.product1, .product2, .product3, .product3, .product4, .product5, .product6 {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#section_1 p {
+    text-align: center;
+}
+/* CSS for Shopping product */
+
+/* CSS for form */
+#section_2 {
+    background-image: url(./assets/formbackground.jpg);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: grid;
+    align-items: center;
+    padding: 8px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-shadow: 1px 1px grey;
+    opacity: 80%;
+}
+
+fieldset {
+    padding-left: 10%;
+}
+/* CSS for form */
+
+
+/* 1130 Dimension Responsive */
+
+@media only screen and ( max-width: 1130px)  {
+    .maincontent {
+    padding-top: 10%;
+    padding-bottom: 30%;
+    padding-left: 50%;
+    }
+    .maincontent h1 {
+        font-size: 200%;
+    }
+    .maincontent p {
+        font-size: 90%;
+    }
+}
+/* 1130 Dimension Responsive */
